@@ -1,10 +1,5 @@
 language: objective-c
-cache: cocoapods
-before_install:
-- gem install cocoapods
-- pod install --project-directory=Example
-install:
-- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
-script:
-- set -o pipefail && xcodebuild test -workspace Example/DigitalOcean.xcworkspace -scheme DigitalOcean-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
-- pod lib lint --quick
+xcode_workspace: Example/DigitalOcean.xcworkspace
+xcode_scheme: DigitalOcean-iOS
+xcode_sdk: iphonesimulator
+podfile: Example/Podfile
