@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name             = "DigitalOcean"
   s.version          = "1.0"
   s.summary          = "An Digitial Ocean SDK for iOS and OSX"
-  s.homepage         = "https://github.com/shaps80/DigitalOcean"
+  s.homepage         = "https://github.com/shaps80/DigitalOcean-SDK"
   s.license          = 'MIT'
   s.author           = { "Shaps" => "http://shaps.me" }
   s.source           = { :git => "https://github.com/shaps80/DigitalOcean-SDK.git", :tag => s.version.to_s }
