@@ -1,7 +1,7 @@
 PODS:
   - DigitalOcean (1.0):
     - SPXDefines (~> 1.2)
-  - Kiwi (2.3.1)
+  - Kiwi (2.4.0)
   - SPXDefines (1.2.4)
 
 DEPENDENCIES:
@@ -13,8 +13,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DigitalOcean: 532316fbd1b730937bb3916a0be9f20acdf5157d
-  Kiwi: f038a6c61f7a9e4d7766bff5717aa3b3fdb75f55
+  DigitalOcean: 77d55418e65c8fec84612d98c7f42b2dc82c2b3c
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
   SPXDefines: 264a8381a08080532d52b041559a6c32af19377b
 
 COCOAPODS: 0.39.0

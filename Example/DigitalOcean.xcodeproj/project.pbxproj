@@ -80,6 +80,7 @@
 		544846BF1B1886AC00253095 /* DOAuthRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOAuthRequest.h; sourceTree = "<group>"; };
 		544846C01B1886AC00253095 /* DOAuthRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOAuthRequest.m; sourceTree = "<group>"; };
 		544846C61B18EB6700253095 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		5450990D1CE1546000E5FE9D /* DigitalOcean.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = DigitalOcean.podspec; path = ../DigitalOcean.podspec; sourceTree = "<group>"; };
 		546728A51B0D06B80012373B /* NSDate+DOAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DOAdditions.h"; sourceTree = "<group>"; };
 		546728A61B0D06B80012373B /* NSDate+DOAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DOAdditions.m"; sourceTree = "<group>"; };
 		546728AB1B0D2A9C0012373B /* NSDictionary+DOAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DOAdditions.h"; sourceTree = "<group>"; };
@@ -169,7 +170,6 @@
 		ADF961CFC8ECBA061C2CE73E /* Pods-DigitalOcean.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalOcean.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DigitalOcean/Pods-DigitalOcean.debug.xcconfig"; sourceTree = "<group>"; };
 		CAD5A6B880BB8C1459409549 /* libPods-DigitalOcean-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DigitalOcean-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4928CD2608BBD576968676B /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E8A94DA0E1A4F789E5E6916D /* DigitalOcean.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DigitalOcean.podspec; path = ../DigitalOcean.podspec; sourceTree = "<group>"; };
 		E9C4CF35308AE105B465B8C8 /* libPods-DigitalOcean.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DigitalOcean.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -463,7 +463,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				E8A94DA0E1A4F789E5E6916D /* DigitalOcean.podspec */,
+				5450990D1CE1546000E5FE9D /* DigitalOcean.podspec */,
 				3214FEBE02B41CAEC90E7B75 /* README.md */,
 				5AD1592094E50510F83749F3 /* LICENSE */,
 			);

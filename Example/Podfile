@@ -15,4 +15,3 @@ target 'Tests', :exclusive => true do
   pod "DigitalOcean", :path => "../"
   pod 'Kiwi'
 end
-
