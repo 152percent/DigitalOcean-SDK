@@ -1,4 +1,4 @@
-# DigitalOcean
+# DigitalOcean SDK (Unofficial)
 
 [![CI Status](http://img.shields.io/travis/shaps80/DigitalOcean.svg?style=flat)](https://travis-ci.org/shaps80/DigitalOcean)
 [![Version](https://img.shields.io/cocoapods/v/DigitalOcean.svg?style=flat)](http://cocoapods.org/pods/DigitalOcean)
