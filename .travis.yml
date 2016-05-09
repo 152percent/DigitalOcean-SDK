@@ -1,5 +1,5 @@
 language: objective-c
 xcode_workspace: Example/DigitalOcean.xcworkspace
-xcode_scheme: DigitalOcean-iOS
+xcode_scheme: DigitalOcean-iOS 
 xcode_sdk: iphonesimulator
 podfile: Example/Podfile
