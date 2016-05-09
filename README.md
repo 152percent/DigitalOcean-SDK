@@ -19,7 +19,7 @@ It is currently in use in production apps, and has many unit tests to keep it st
 
 This SDK is compatible with the following platforms & versions:
 
-- iOS 7.1+
+- iOS 7.0+
 - OSX 10.9+
 
 ## Examples
