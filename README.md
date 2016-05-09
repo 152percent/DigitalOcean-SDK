@@ -24,20 +24,41 @@ This SDK is compatible with the following platforms & versions:
 
 ## Examples
 
-**Patterns**
+**Services & Queries**
 
-Importing this class will bring in all the necessary classes you need to access the Digital Ocean API
+The SDK uses simple patterns -- paired with an object oriented design -- for integrating with the public Digital Ocean API.
+
+In order to access an endpoint, the SDK provides access to various Queries. A query can then be processed through a Service.
+
+- `DOService`
+- `DOQuery`
+
+Its recommended you create a single service, and reuse it throughout your applications lifecycle. However, its not enforced and you can choose to create multiple services if you prefer.
+
+This is useful when you want to access multple accounts at the same time.
+
+**Authentication**
+
+In order to perform a query however, we need to pass a `authToken`. You can either generate a token through the Digital Ocean API section of their website, or use the SDK to perform login for you.
+
+```swift
+DOAuthenticationController *controller = [[DOAuthenticationController alloc] initWithDelegate:self clientID:$CLIENT_ID clientSecret:$CLIENT_SECRET redirectURI:$REDIRECT_URI];
+  [self presentViewController:controller animated:YES completion:nil];
+```
 
 To get started you need to configure an instance of the service:
 
-```objc
+```swift
+// Creates a new authenticated service
 DOService *service = [DOService serviceWithToken:$TOKEN delegate:nil]];
+
+// This method is called when authentication is successful
+- (void)authenticationController:(DOAuthenticationController *)controller didAuthenticateWithUser:(DOUser *)user;
 ```
 
-If no delegate is assigned, a default NSURLSession will be used for all networking automatically.
-Although useful during early development and testing, it is recommended you use your own network stack for a release.
+Passing nil for the delegate, forces the SDK to use a default NSURLSession for all networking. You can optionally provide your own delegate to override this behaviour. 
 
-**Service**
+Note: Requests will still be generated automatically, including authentication headers.
 
 **Queries**
 
@@ -57,27 +78,99 @@ Instead of the original NSData and NSURLResponse being returned, we now have an 
 `meta` will contain various information such as rate-limit info, pagination, etc...
 `error` will contain any associated errors -- note: an error will always be returned when necessary, even if the associated response didn't return one -- this is for consistency
 
+## Queries
 
-QUERY TYPES
------------
+**Actions**
 
-
-There are various query object types to choose from, they are separated and named for clarity:
-
-```objc
-DOQuery+Fetches
-DOQuery+Actions
-DOQuery+Inserts
-DOQuery+Updates
-DOQuery+Deletes
+```swift
++ (instancetype)softPowerOffDropletWithID:(NSUInteger)dropletID;
++ (instancetype)hardPowerOffDropletWithID:(NSUInteger)dropletID;
++ (instancetype)softRebootDropletWithID:(NSUInteger)dropletID;
++ (instancetype)hardRebootDropletWithID:(NSUInteger)dropletID;
++ (instancetype)powerOnDropletWithID:(NSUInteger)dropletID;
++ (instancetype)upgradeDropletWithID:(NSUInteger)dropletID;
++ (instancetype)resizeDropletWithID:(NSUInteger)dropletID toSizeSlug:(NSString *)sizeSlug increaseDiskPermanently:(BOOL)disk;
++ (instancetype)rebuildDropletWithID:(NSUInteger)dropletID withImageWithID:(NSUInteger)imageID;
++ (instancetype)resetPasswordForDropletWithID:(NSUInteger)dropletID;
++ (instancetype)renameDropletWithID:(NSUInteger)dropletID name:(NSString *)name;
++ (instancetype)updateKernelForDropletWithID:(NSUInteger)dropletID kernelID:(NSUInteger)kernelID;
++ (instancetype)enableBackupsForDropletWithID:(NSUInteger)dropletID;
++ (instancetype)disableBackupsForDropletWithID:(NSUInteger)dropletID;
++ (instancetype)restoreBackupForDropletWithID:(NSUInteger)dropletID imageID:(NSUInteger)imageID;
++ (instancetype)enableIPV6ForDropletWithID:(NSUInteger)dropletID;
++ (instancetype)enablePrivateNetworkingForDropletWithID:(NSUInteger)dropletID;
++ (instancetype)createSnapshotForDropletWithID:(NSUInteger)dropletID name:(NSString *)name;
++ (instancetype)convertBackupToSnapshotForImageWithID:(NSUInteger)imageID;
++ (instancetype)transferImageWithID:(NSUInteger)imageID toRegionSlug:(NSString *)regionSlug;
++ (instancetype)assignFloatingIP:(NSString *)IPAddress toDropletWithID:(NSUInteger)dropletID;
++ (instancetype)unAssignFloatingIP:(NSString *)IPAddress;
++ (instancetype)reserveFloatingIPForRegionSlug:(NSString *)regionSlug;
 ```
 
-Each of these classes provides access to all documented Digital Ocean API's -- however there may be times when you new API becomes available and you need access to it. 
-In this case, you can use DOQuery directly -- refer to the above implementation for usage.
+**Fetches**
+
+```swift
++ (instancetype)fetchAccount;
++ (instancetype)fetchRegions;
++ (instancetype)fetchSizes;
++ (instancetype)fetchScheduledUpgrades;
++ (instancetype)fetchNeighbors;
++ (instancetype)fetchNeighborsForDropletWithID:(NSUInteger)dropletID;
++ (instancetype)fetchKernelsForDropletWithID:(NSUInteger)dropletID;
++ (instancetype)fetchActions;
++ (instancetype)fetchActionsForDropletWithID:(NSUInteger)dropletID;
++ (instancetype)fetchActionsForImageWithID:(NSUInteger)imageID;
++ (instancetype)fetchActionWithID:(NSUInteger)actionID;
++ (instancetype)fetchDroplets;
++ (instancetype)fetchDropletWithID:(NSUInteger)dropletID;
++ (instancetype)fetchImages;
++ (instancetype)fetchImagesOfType:(DOImageFetchType)type;
++ (instancetype)fetchImageWithID:(NSUInteger)imageID;
++ (instancetype)fetchDomains;
++ (instancetype)fetchDomainNamed:(NSString *)name;
++ (instancetype)fetchRecordsForDomainNamed:(NSString *)name;
++ (instancetype)fetchRecordForDomainNamed:(NSString *)name recordID:(NSUInteger)recordID;
++ (instancetype)fetchSSHKeys;
++ (instancetype)fetchSSHKeyWithID:(NSUInteger)SSHKeyID;
++ (instancetype)fetchSSHKeyWithFingerprint:(NSString *)fingerprint;
++ (instancetype)fetchFloatingIPs;
++ (instancetype)fetchFloatingIP:(NSString *)IPAddress;
+```
+
+**Inserts**
+
+```swift
++ (instancetype)insertDropletWithConfiguration:(void (^)(DODropletConfiguration * __configuration))configurationBlock;
++ (instancetype)insertDomainNamed:(NSString *)name ipAddress:(NSString *)ipAddress;
++ (instancetype)insertRecordForDomainNamed:(NSString *)name attributes:(NSDictionary *)attributes;
++ (instancetype)insertSSHKeyNamed:(NSString *)name publicKey:(NSString *)publicKey;
++ (instancetype)insertFloatingIPWithDropletID:(NSUInteger)dropletID;
++ (instancetype)insertFloatingIPWithRegionSlug:(NSString *)regionSlug;
+```
+
+**Updates**
+
+```swift
++ (instancetype)updateRecordForDomainNamed:(NSString *)name recordID:(NSUInteger)recordID attributes:(NSDictionary *)attributes;
++ (instancetype)updateImageWithID:(NSUInteger)imageID withName:(NSString *)name;
++ (instancetype)updateSSHKeyWithID:(NSUInteger)SSHKeyID withName:(NSString *)name;
++ (instancetype)updateSSHKeyWithFingerprint:(NSString *)fingerprint withName:(NSString *)name;
+```
+
+**Deletes**
+
+```swift
++ (instancetype)deleteDropletWithID:(NSUInteger)dropletID;
++ (instancetype)deleteImageWithID:(NSUInteger)imageID;
++ (instancetype)deleteDomainNamed:(NSString *)name;
++ (instancetype)deleteRecordForDomainNamed:(NSString *)name recordID:(NSUInteger)recordID;
++ (instancetype)deleteSSHKeyWithID:(NSUInteger)SSHKeyID;
++ (instancetype)deleteSSHKeyWithFingerprint:(NSString *)fingerprint;
++ (instancetype)deleteFloatingIP:(NSString *)IPAddress;
+```
 
 
-FURTHER DOCUMENTATION
------
+## Documentation
 
 For further documentation you can refer to the Header documentation as well as the included unit tests and example projects.
 
@@ -92,7 +185,7 @@ pod "DigitalOcean-SDK"
 
 ## Author
 
-Shaps (@shaps)
+Shaps [@shaps](http://twiter.com/shaps)
 
 ## License
 
