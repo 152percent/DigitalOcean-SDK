@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4E116D6714F68AFED2FF292AD1BC349C2CAECC13",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A577B401C3AFAA812F7C21F73D702AFBA26BDBD4" : 0,
+    "4E116D6714F68AFED2FF292AD1BC349C2CAECC13" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "37F9521D-EFE0-4C36-8B20-B6B6FBFFC235",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A577B401C3AFAA812F7C21F73D702AFBA26BDBD4" : "DigitalOcean",
+    "4E116D6714F68AFED2FF292AD1BC349C2CAECC13" : "DigitalOcean-SDK\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DigitalOcean",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/DigitalOcean.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:shaps80\/DigitalOcean-SDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4E116D6714F68AFED2FF292AD1BC349C2CAECC13"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:shaps\/digitalocean.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A577B401C3AFAA812F7C21F73D702AFBA26BDBD4"
+    }
+  ]
+}
