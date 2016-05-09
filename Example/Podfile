@@ -1,0 +1,18 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'DigitalOcean', :exclusive => true do
+  platform :ios, '7.0'
+  pod "DigitalOcean", :path => "../"
+end
+
+target 'DigitalOcean-OSX', :exclusive => true do
+  platform :osx, '10.9'
+  pod "DigitalOcean", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  platform :ios, '7.0'
+  pod "DigitalOcean", :path => "../"
+  pod 'Kiwi'
+end
+

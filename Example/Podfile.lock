@@ -1,0 +1,20 @@
+PODS:
+  - DigitalOcean (1.0):
+    - SPXDefines (~> 1.2)
+  - Kiwi (2.3.1)
+  - SPXDefines (1.2.4)
+
+DEPENDENCIES:
+  - DigitalOcean (from `../`)
+  - Kiwi
+
+EXTERNAL SOURCES:
+  DigitalOcean:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DigitalOcean: 532316fbd1b730937bb3916a0be9f20acdf5157d
+  Kiwi: f038a6c61f7a9e4d7766bff5717aa3b3fdb75f55
+  SPXDefines: 264a8381a08080532d52b041559a6c32af19377b
+
+COCOAPODS: 0.39.0

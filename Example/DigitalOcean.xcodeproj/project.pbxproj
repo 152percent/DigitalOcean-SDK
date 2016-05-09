@@ -1,0 +1,1064 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		540DC9E81B14736C008ED96E /* DOOSXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 540DC9E71B14736C008ED96E /* DOOSXAppDelegate.m */; };
+		540DC9EA1B14736C008ED96E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 540DC9E91B14736C008ED96E /* main.m */; };
+		540DC9ED1B14736C008ED96E /* DOOSXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 540DC9EC1B14736C008ED96E /* DOOSXViewController.m */; };
+		540DC9EF1B14736C008ED96E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 540DC9EE1B14736C008ED96E /* Images.xcassets */; };
+		540DC9F21B14736C008ED96E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540DC9F01B14736C008ED96E /* Main.storyboard */; };
+		54A1E0E81B06376700357471 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A1E0E71B06376700357471 /* Images.xcassets */; };
+		54AF6CBE1B13D53100A9D0E6 /* DODeleteQuerySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AF6CBD1B13D53100A9D0E6 /* DODeleteQuerySpec.m */; };
+		54AF6CC01B13D6FB00A9D0E6 /* DOFetchQuerySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AF6CBF1B13D6FB00A9D0E6 /* DOFetchQuerySpec.m */; };
+		54AF6CC21B13DCB800A9D0E6 /* DOActionQuerySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AF6CC11B13DCB800A9D0E6 /* DOActionQuerySpec.m */; };
+		54C699311B13D00B00A04F17 /* DOUpdateQueriesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C699301B13D00B00A04F17 /* DOUpdateQueriesSpec.m */; };
+		54CCF1261B13B311002D6720 /* NSString_DOAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CCF1251B13B311002D6720 /* NSString_DOAdditionsSpec.m */; };
+		54E8BB041B13B885009663D0 /* NSDate_DOAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8BB031B13B885009663D0 /* NSDate_DOAdditionsSpec.m */; };
+		54E8BB061B13BAF9009663D0 /* NSDictionary_DOAdditionsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8BB051B13BAF9009663D0 /* NSDictionary_DOAdditionsSpec.m */; };
+		54E8BB081B13BBDC009663D0 /* DOInternalSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8BB071B13BBDC009663D0 /* DOInternalSpec.m */; };
+		54E8BB0C1B13C01A009663D0 /* DOQuerySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8BB0B1B13C01A009663D0 /* DOQuerySpec.m */; };
+		54E8BB0E1B13C753009663D0 /* DOInsertQuerySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8BB0D1B13C753009663D0 /* DOInsertQuerySpec.m */; };
+		54F9AF191B13A6EA0054A0C4 /* DOValidatorsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F9AF181B13A6EA0054A0C4 /* DOValidatorsSpec.m */; };
+		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
+		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
+		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
+		6003F59E195388D20070C39A /* DOiOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* DOiOSAppDelegate.m */; };
+		6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003F59F195388D20070C39A /* Main_iPhone.storyboard */; };
+		6003F5A7195388D20070C39A /* DOiOSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* DOiOSViewController.m */; };
+		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
+		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
+		60EDE79D2E4F47C762B42043 /* libPods-DigitalOcean-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD5A6B880BB8C1459409549 /* libPods-DigitalOcean-OSX.a */; };
+		8E1E53656ECB6297C923D872 /* libPods-DigitalOcean.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C4CF35308AE105B465B8C8 /* libPods-DigitalOcean.a */; };
+		A48FC253A00FA77AA7C2383D /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A14FF5DEDEA94FD92FDE02 /* libPods-Tests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6003F589195388D20070C39A;
+			remoteInfo = DigitalOcean;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27CF411D2948352EE665035C /* Pods-DigitalOcean-OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalOcean-OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DigitalOcean-OSX/Pods-DigitalOcean-OSX.debug.xcconfig"; sourceTree = "<group>"; };
+		3214FEBE02B41CAEC90E7B75 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3EEA0BD4FDF5E443726715F0 /* Pods-DigitalOcean-OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalOcean-OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-DigitalOcean-OSX/Pods-DigitalOcean-OSX.release.xcconfig"; sourceTree = "<group>"; };
+		540DC9E21B14736C008ED96E /* DigitalOcean-OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DigitalOcean-OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		540DC9E51B14736C008ED96E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		540DC9E61B14736C008ED96E /* DOOSXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOOSXAppDelegate.h; sourceTree = "<group>"; };
+		540DC9E71B14736C008ED96E /* DOOSXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOOSXAppDelegate.m; sourceTree = "<group>"; };
+		540DC9E91B14736C008ED96E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		540DC9EB1B14736C008ED96E /* DOOSXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOOSXViewController.h; sourceTree = "<group>"; };
+		540DC9EC1B14736C008ED96E /* DOOSXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOOSXViewController.m; sourceTree = "<group>"; };
+		540DC9EE1B14736C008ED96E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		540DC9F11B14736C008ED96E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5422D4DA1C022E6C00517822 /* DOFloatingIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOFloatingIP.h; sourceTree = "<group>"; };
+		5422D4DB1C022E6C00517822 /* DOFloatingIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOFloatingIP.m; sourceTree = "<group>"; };
+		5422D4DC1C022E6C00517822 /* DORegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DORegion.h; sourceTree = "<group>"; };
+		5422D4DD1C022E6C00517822 /* DORegion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DORegion.m; sourceTree = "<group>"; };
+		5425AB421C0CE72C00CFA3F2 /* NSURLRequest+DOAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+DOAdditions.h"; sourceTree = "<group>"; };
+		5425AB431C0CE72C00CFA3F2 /* NSURLRequest+DOAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+DOAdditions.m"; sourceTree = "<group>"; };
+		543E87511B12051200D18953 /* DOEndpointConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOEndpointConstants.h; sourceTree = "<group>"; };
+		543E87521B12051200D18953 /* DOInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOInternal.h; sourceTree = "<group>"; };
+		543E87531B12051200D18953 /* DOInternal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOInternal.m; sourceTree = "<group>"; };
+		543E87541B122D7300D18953 /* DOValidators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOValidators.h; sourceTree = "<group>"; };
+		543E87551B122D7300D18953 /* DOValidators.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOValidators.m; sourceTree = "<group>"; };
+		544846BC1B1886A300253095 /* DOAuthenticationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOAuthenticationController.h; sourceTree = "<group>"; };
+		544846BD1B1886A300253095 /* DOAuthenticationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOAuthenticationController.m; sourceTree = "<group>"; };
+		544846BF1B1886AC00253095 /* DOAuthRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOAuthRequest.h; sourceTree = "<group>"; };
+		544846C01B1886AC00253095 /* DOAuthRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOAuthRequest.m; sourceTree = "<group>"; };
+		544846C61B18EB6700253095 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		546728A51B0D06B80012373B /* NSDate+DOAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DOAdditions.h"; sourceTree = "<group>"; };
+		546728A61B0D06B80012373B /* NSDate+DOAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DOAdditions.m"; sourceTree = "<group>"; };
+		546728AB1B0D2A9C0012373B /* NSDictionary+DOAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DOAdditions.h"; sourceTree = "<group>"; };
+		546728AC1B0D2A9C0012373B /* NSDictionary+DOAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DOAdditions.m"; sourceTree = "<group>"; };
+		546728AE1B0D310C0012373B /* DOKernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOKernel.h; sourceTree = "<group>"; };
+		546728AF1B0D310C0012373B /* DOKernel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOKernel.m; sourceTree = "<group>"; };
+		54A1E0E71B06376700357471 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		54A1E0E91B0638E800357471 /* DigitalOcean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DigitalOcean.h; sourceTree = "<group>"; };
+		54A1E1041B06587D00357471 /* DOService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOService.h; sourceTree = "<group>"; };
+		54A1E1051B06587D00357471 /* DOService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOService.m; sourceTree = "<group>"; };
+		54A1E1361B0676D100357471 /* DOObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOObject.h; sourceTree = "<group>"; };
+		54AAB8101B0A85F70009F288 /* DOAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOAction.h; sourceTree = "<group>"; };
+		54AAB8111B0A85F70009F288 /* DOAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOAction.m; sourceTree = "<group>"; };
+		54AAB8131B0A85FF0009F288 /* DODomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DODomain.h; sourceTree = "<group>"; };
+		54AAB8141B0A85FF0009F288 /* DODomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DODomain.m; sourceTree = "<group>"; };
+		54AAB8161B0A860B0009F288 /* DODomainRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DODomainRecord.h; sourceTree = "<group>"; };
+		54AAB8171B0A860B0009F288 /* DODomainRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DODomainRecord.m; sourceTree = "<group>"; };
+		54AAB8191B0A86110009F288 /* DODroplet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DODroplet.h; sourceTree = "<group>"; };
+		54AAB81A1B0A86110009F288 /* DODroplet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DODroplet.m; sourceTree = "<group>"; };
+		54AAB81C1B0A861F0009F288 /* DOImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOImage.h; sourceTree = "<group>"; };
+		54AAB81D1B0A86200009F288 /* DOImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOImage.m; sourceTree = "<group>"; };
+		54AAB81F1B0A86290009F288 /* DOSSHKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOSSHKey.h; sourceTree = "<group>"; };
+		54AAB8201B0A86290009F288 /* DOSSHKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOSSHKey.m; sourceTree = "<group>"; };
+		54AAB8221B0A86300009F288 /* DORegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DORegion.h; sourceTree = "<group>"; };
+		54AAB8231B0A86300009F288 /* DORegion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DORegion.m; sourceTree = "<group>"; };
+		54AAB8251B0A86340009F288 /* DOSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOSize.h; sourceTree = "<group>"; };
+		54AAB8261B0A86340009F288 /* DOSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOSize.m; sourceTree = "<group>"; };
+		54AAB82B1B0A8D1C0009F288 /* DOObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOObject.m; sourceTree = "<group>"; };
+		54AAB82D1B0B2FED0009F288 /* NSString+DOAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DOAdditions.h"; sourceTree = "<group>"; };
+		54AAB82E1B0B2FED0009F288 /* NSString+DOAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DOAdditions.m"; sourceTree = "<group>"; };
+		54AAB8301B0B58490009F288 /* DOAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOAccount.h; sourceTree = "<group>"; };
+		54AAB8311B0B58490009F288 /* DOAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOAccount.m; sourceTree = "<group>"; };
+		54ABD0801BDC4E500035EC23 /* DONetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DONetwork.h; sourceTree = "<group>"; };
+		54ABD0811BDC4E500035EC23 /* DONetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DONetwork.m; sourceTree = "<group>"; };
+		54AD86D51BCAAAE300FBA33B /* DOUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUser.h; sourceTree = "<group>"; };
+		54AD86D61BCAAAE300FBA33B /* DOUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUser.m; sourceTree = "<group>"; };
+		54AF6CBD1B13D53100A9D0E6 /* DODeleteQuerySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DODeleteQuerySpec.m; sourceTree = "<group>"; };
+		54AF6CBF1B13D6FB00A9D0E6 /* DOFetchQuerySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOFetchQuerySpec.m; sourceTree = "<group>"; };
+		54AF6CC11B13DCB800A9D0E6 /* DOActionQuerySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOActionQuerySpec.m; sourceTree = "<group>"; };
+		54B17A571B0C8EFE00437FC6 /* DOQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOQuery.h; sourceTree = "<group>"; };
+		54B17A581B0C8EFE00437FC6 /* DOQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOQuery.m; sourceTree = "<group>"; };
+		54B17A5C1B0C8F2000437FC6 /* DOMetaData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOMetaData.h; sourceTree = "<group>"; };
+		54B17A5D1B0C8F2000437FC6 /* DOMetaData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOMetaData.m; sourceTree = "<group>"; };
+		54C40E791B14E02C008AD44A /* DODefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DODefines.h; sourceTree = "<group>"; };
+		54C699301B13D00B00A04F17 /* DOUpdateQueriesSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUpdateQueriesSpec.m; sourceTree = "<group>"; };
+		54CCF1251B13B311002D6720 /* NSString_DOAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_DOAdditionsSpec.m; sourceTree = "<group>"; };
+		54E8BB031B13B885009663D0 /* NSDate_DOAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDate_DOAdditionsSpec.m; sourceTree = "<group>"; };
+		54E8BB051B13BAF9009663D0 /* NSDictionary_DOAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_DOAdditionsSpec.m; sourceTree = "<group>"; };
+		54E8BB071B13BBDC009663D0 /* DOInternalSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOInternalSpec.m; sourceTree = "<group>"; };
+		54E8BB0B1B13C01A009663D0 /* DOQuerySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOQuerySpec.m; sourceTree = "<group>"; };
+		54E8BB0D1B13C753009663D0 /* DOInsertQuerySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOInsertQuerySpec.m; sourceTree = "<group>"; };
+		54F725451BCD9C2500E45CE9 /* DOQuery+Actions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DOQuery+Actions.h"; sourceTree = "<group>"; };
+		54F725461BCD9C2500E45CE9 /* DOQuery+Actions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DOQuery+Actions.m"; sourceTree = "<group>"; };
+		54F725471BCD9C2500E45CE9 /* DOQuery+Deletes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DOQuery+Deletes.h"; sourceTree = "<group>"; };
+		54F725481BCD9C2500E45CE9 /* DOQuery+Deletes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DOQuery+Deletes.m"; sourceTree = "<group>"; };
+		54F725491BCD9C2500E45CE9 /* DOQuery+Fetches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DOQuery+Fetches.h"; sourceTree = "<group>"; };
+		54F7254A1BCD9C2500E45CE9 /* DOQuery+Fetches.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DOQuery+Fetches.m"; sourceTree = "<group>"; };
+		54F7254B1BCD9C2500E45CE9 /* DOQuery+Inserts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DOQuery+Inserts.h"; sourceTree = "<group>"; };
+		54F7254C1BCD9C2500E45CE9 /* DOQuery+Inserts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DOQuery+Inserts.m"; sourceTree = "<group>"; };
+		54F7254D1BCD9C2500E45CE9 /* DOQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DOQuery+Private.h"; sourceTree = "<group>"; };
+		54F7254E1BCD9C2500E45CE9 /* DOQuery+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DOQuery+Private.m"; sourceTree = "<group>"; };
+		54F7254F1BCD9C2500E45CE9 /* DOQuery+Updates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DOQuery+Updates.h"; sourceTree = "<group>"; };
+		54F725501BCD9C2500E45CE9 /* DOQuery+Updates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DOQuery+Updates.m"; sourceTree = "<group>"; };
+		54F9AF181B13A6EA0054A0C4 /* DOValidatorsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOValidatorsSpec.m; sourceTree = "<group>"; };
+		5AD1592094E50510F83749F3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6003F58A195388D20070C39A /* DigitalOcean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalOcean.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6003F595195388D20070C39A /* DigitalOcean-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DigitalOcean-Info.plist"; sourceTree = "<group>"; };
+		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* DigitalOcean-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DigitalOcean-Prefix.pch"; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* DOiOSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOiOSAppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* DOiOSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOiOSAppDelegate.m; sourceTree = "<group>"; };
+		6003F5A0195388D20070C39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		6003F5A5195388D20070C39A /* DOiOSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOiOSViewController.h; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* DOiOSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOiOSViewController.m; sourceTree = "<group>"; };
+		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		6E1AF44D4B2B1E3B4975684D /* Pods-DigitalOcean.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalOcean.release.xcconfig"; path = "Pods/Target Support Files/Pods-DigitalOcean/Pods-DigitalOcean.release.xcconfig"; sourceTree = "<group>"; };
+		87A14FF5DEDEA94FD92FDE02 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9938DB2CEC06F286D3A6E9A2 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		ADF961CFC8ECBA061C2CE73E /* Pods-DigitalOcean.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalOcean.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DigitalOcean/Pods-DigitalOcean.debug.xcconfig"; sourceTree = "<group>"; };
+		CAD5A6B880BB8C1459409549 /* libPods-DigitalOcean-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DigitalOcean-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4928CD2608BBD576968676B /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E8A94DA0E1A4F789E5E6916D /* DigitalOcean.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DigitalOcean.podspec; path = ../DigitalOcean.podspec; sourceTree = "<group>"; };
+		E9C4CF35308AE105B465B8C8 /* libPods-DigitalOcean.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DigitalOcean.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		540DC9DF1B14736C008ED96E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60EDE79D2E4F47C762B42043 /* libPods-DigitalOcean-OSX.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F587195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
+				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				8E1E53656ECB6297C923D872 /* libPods-DigitalOcean.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AB195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
+				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
+				A48FC253A00FA77AA7C2383D /* libPods-Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0ACAA5FB7DE551D3374C1C59 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADF961CFC8ECBA061C2CE73E /* Pods-DigitalOcean.debug.xcconfig */,
+				6E1AF44D4B2B1E3B4975684D /* Pods-DigitalOcean.release.xcconfig */,
+				9938DB2CEC06F286D3A6E9A2 /* Pods-Tests.debug.xcconfig */,
+				E4928CD2608BBD576968676B /* Pods-Tests.release.xcconfig */,
+				27CF411D2948352EE665035C /* Pods-DigitalOcean-OSX.debug.xcconfig */,
+				3EEA0BD4FDF5E443726715F0 /* Pods-DigitalOcean-OSX.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		540DC9E31B14736C008ED96E /* DigitalOcean-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				540DC9E61B14736C008ED96E /* DOOSXAppDelegate.h */,
+				540DC9E71B14736C008ED96E /* DOOSXAppDelegate.m */,
+				540DC9EB1B14736C008ED96E /* DOOSXViewController.h */,
+				540DC9EC1B14736C008ED96E /* DOOSXViewController.m */,
+				540DC9EE1B14736C008ED96E /* Images.xcassets */,
+				540DC9F01B14736C008ED96E /* Main.storyboard */,
+				540DC9E41B14736C008ED96E /* Supporting Files */,
+			);
+			path = "DigitalOcean-OSX";
+			sourceTree = "<group>";
+		};
+		540DC9E41B14736C008ED96E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				540DC9E51B14736C008ED96E /* Info.plist */,
+				540DC9E91B14736C008ED96E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		543E87501B1204FA00D18953 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				543E87511B12051200D18953 /* DOEndpointConstants.h */,
+				543E87521B12051200D18953 /* DOInternal.h */,
+				543E87531B12051200D18953 /* DOInternal.m */,
+				54C40E791B14E02C008AD44A /* DODefines.h */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		544846BB1B18868500253095 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				544846BC1B1886A300253095 /* DOAuthenticationController.h */,
+				544846BD1B1886A300253095 /* DOAuthenticationController.m */,
+				544846BF1B1886AC00253095 /* DOAuthRequest.h */,
+				544846C01B1886AC00253095 /* DOAuthRequest.m */,
+				54AD86D51BCAAAE300FBA33B /* DOUser.h */,
+				54AD86D61BCAAAE300FBA33B /* DOUser.m */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		54A1E0E61B0630D100357471 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				54A1E0E91B0638E800357471 /* DigitalOcean.h */,
+				54A1E1041B06587D00357471 /* DOService.h */,
+				54A1E1051B06587D00357471 /* DOService.m */,
+				543E87541B122D7300D18953 /* DOValidators.h */,
+				543E87551B122D7300D18953 /* DOValidators.m */,
+				544846BB1B18868500253095 /* Authentication */,
+				54AAB82C1B0B2BC90009F288 /* Categories */,
+				543E87501B1204FA00D18953 /* Internal */,
+				54B17A5B1B0C8F2000437FC6 /* Meta */,
+				54A1E1251B06746500357471 /* Model */,
+				54B17A4E1B0C8EFE00437FC6 /* Queries */,
+			);
+			name = Classes;
+			path = ../Pod/Classes;
+			sourceTree = "<group>";
+		};
+		54A1E1251B06746500357471 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54A1E1361B0676D100357471 /* DOObject.h */,
+				54AAB82B1B0A8D1C0009F288 /* DOObject.m */,
+				54AAB8301B0B58490009F288 /* DOAccount.h */,
+				54AAB8311B0B58490009F288 /* DOAccount.m */,
+				54AAB8101B0A85F70009F288 /* DOAction.h */,
+				54AAB8111B0A85F70009F288 /* DOAction.m */,
+				54AAB8131B0A85FF0009F288 /* DODomain.h */,
+				54AAB8141B0A85FF0009F288 /* DODomain.m */,
+				54AAB8161B0A860B0009F288 /* DODomainRecord.h */,
+				54AAB8171B0A860B0009F288 /* DODomainRecord.m */,
+				54AAB8191B0A86110009F288 /* DODroplet.h */,
+				54AAB81A1B0A86110009F288 /* DODroplet.m */,
+				54ABD0801BDC4E500035EC23 /* DONetwork.h */,
+				54ABD0811BDC4E500035EC23 /* DONetwork.m */,
+				54AAB81C1B0A861F0009F288 /* DOImage.h */,
+				54AAB81D1B0A86200009F288 /* DOImage.m */,
+				54AAB81F1B0A86290009F288 /* DOSSHKey.h */,
+				54AAB8201B0A86290009F288 /* DOSSHKey.m */,
+				54AAB8221B0A86300009F288 /* DORegion.h */,
+				54AAB8231B0A86300009F288 /* DORegion.m */,
+				54AAB8251B0A86340009F288 /* DOSize.h */,
+				54AAB8261B0A86340009F288 /* DOSize.m */,
+				546728AE1B0D310C0012373B /* DOKernel.h */,
+				546728AF1B0D310C0012373B /* DOKernel.m */,
+				5422D4DA1C022E6C00517822 /* DOFloatingIP.h */,
+				5422D4DB1C022E6C00517822 /* DOFloatingIP.m */,
+				5422D4DC1C022E6C00517822 /* DORegion.h */,
+				5422D4DD1C022E6C00517822 /* DORegion.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54AAB82C1B0B2BC90009F288 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				54AAB82D1B0B2FED0009F288 /* NSString+DOAdditions.h */,
+				54AAB82E1B0B2FED0009F288 /* NSString+DOAdditions.m */,
+				546728A51B0D06B80012373B /* NSDate+DOAdditions.h */,
+				546728A61B0D06B80012373B /* NSDate+DOAdditions.m */,
+				546728AB1B0D2A9C0012373B /* NSDictionary+DOAdditions.h */,
+				546728AC1B0D2A9C0012373B /* NSDictionary+DOAdditions.m */,
+				5425AB421C0CE72C00CFA3F2 /* NSURLRequest+DOAdditions.h */,
+				5425AB431C0CE72C00CFA3F2 /* NSURLRequest+DOAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		54B17A4E1B0C8EFE00437FC6 /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				54B17A571B0C8EFE00437FC6 /* DOQuery.h */,
+				54B17A581B0C8EFE00437FC6 /* DOQuery.m */,
+				54F725451BCD9C2500E45CE9 /* DOQuery+Actions.h */,
+				54F725461BCD9C2500E45CE9 /* DOQuery+Actions.m */,
+				54F725471BCD9C2500E45CE9 /* DOQuery+Deletes.h */,
+				54F725481BCD9C2500E45CE9 /* DOQuery+Deletes.m */,
+				54F725491BCD9C2500E45CE9 /* DOQuery+Fetches.h */,
+				54F7254A1BCD9C2500E45CE9 /* DOQuery+Fetches.m */,
+				54F7254B1BCD9C2500E45CE9 /* DOQuery+Inserts.h */,
+				54F7254C1BCD9C2500E45CE9 /* DOQuery+Inserts.m */,
+				54F7254D1BCD9C2500E45CE9 /* DOQuery+Private.h */,
+				54F7254E1BCD9C2500E45CE9 /* DOQuery+Private.m */,
+				54F7254F1BCD9C2500E45CE9 /* DOQuery+Updates.h */,
+				54F725501BCD9C2500E45CE9 /* DOQuery+Updates.m */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		54B17A5B1B0C8F2000437FC6 /* Meta */ = {
+			isa = PBXGroup;
+			children = (
+				54B17A5C1B0C8F2000437FC6 /* DOMetaData.h */,
+				54B17A5D1B0C8F2000437FC6 /* DOMetaData.m */,
+			);
+			path = Meta;
+			sourceTree = "<group>";
+		};
+		6003F581195388D10070C39A = {
+			isa = PBXGroup;
+			children = (
+				54A1E0E61B0630D100357471 /* Classes */,
+				6003F593195388D20070C39A /* DigitalOcean-iOS */,
+				540DC9E31B14736C008ED96E /* DigitalOcean-OSX */,
+				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
+				6003F5B5195388D20070C39A /* Tests */,
+				6003F58C195388D20070C39A /* Frameworks */,
+				6003F58B195388D20070C39A /* Products */,
+				0ACAA5FB7DE551D3374C1C59 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6003F58B195388D20070C39A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58A195388D20070C39A /* DigitalOcean.app */,
+				6003F5AE195388D20070C39A /* Tests.xctest */,
+				540DC9E21B14736C008ED96E /* DigitalOcean-OSX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6003F58C195388D20070C39A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				544846C61B18EB6700253095 /* WebKit.framework */,
+				6003F58D195388D20070C39A /* Foundation.framework */,
+				6003F58F195388D20070C39A /* CoreGraphics.framework */,
+				6003F591195388D20070C39A /* UIKit.framework */,
+				6003F5AF195388D20070C39A /* XCTest.framework */,
+				E9C4CF35308AE105B465B8C8 /* libPods-DigitalOcean.a */,
+				87A14FF5DEDEA94FD92FDE02 /* libPods-Tests.a */,
+				CAD5A6B880BB8C1459409549 /* libPods-DigitalOcean-OSX.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6003F593195388D20070C39A /* DigitalOcean-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6003F59C195388D20070C39A /* DOiOSAppDelegate.h */,
+				6003F59D195388D20070C39A /* DOiOSAppDelegate.m */,
+				6003F5A5195388D20070C39A /* DOiOSViewController.h */,
+				6003F5A6195388D20070C39A /* DOiOSViewController.m */,
+				6003F59F195388D20070C39A /* Main_iPhone.storyboard */,
+				54A1E0E71B06376700357471 /* Images.xcassets */,
+				6003F594195388D20070C39A /* Supporting Files */,
+			);
+			name = "DigitalOcean-iOS";
+			path = DigitalOcean;
+			sourceTree = "<group>";
+		};
+		6003F594195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F595195388D20070C39A /* DigitalOcean-Info.plist */,
+				6003F596195388D20070C39A /* InfoPlist.strings */,
+				6003F599195388D20070C39A /* main.m */,
+				6003F59B195388D20070C39A /* DigitalOcean-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6003F5B5195388D20070C39A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5B6195388D20070C39A /* Supporting Files */,
+				54F9AF181B13A6EA0054A0C4 /* DOValidatorsSpec.m */,
+				54CCF1251B13B311002D6720 /* NSString_DOAdditionsSpec.m */,
+				54E8BB031B13B885009663D0 /* NSDate_DOAdditionsSpec.m */,
+				54E8BB051B13BAF9009663D0 /* NSDictionary_DOAdditionsSpec.m */,
+				54E8BB071B13BBDC009663D0 /* DOInternalSpec.m */,
+				54E8BB0B1B13C01A009663D0 /* DOQuerySpec.m */,
+				54E8BB0D1B13C753009663D0 /* DOInsertQuerySpec.m */,
+				54C699301B13D00B00A04F17 /* DOUpdateQueriesSpec.m */,
+				54AF6CBD1B13D53100A9D0E6 /* DODeleteQuerySpec.m */,
+				54AF6CBF1B13D6FB00A9D0E6 /* DOFetchQuerySpec.m */,
+				54AF6CC11B13DCB800A9D0E6 /* DOActionQuerySpec.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6003F5B6195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5B7195388D20070C39A /* Tests-Info.plist */,
+				6003F5B8195388D20070C39A /* InfoPlist.strings */,
+				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				E8A94DA0E1A4F789E5E6916D /* DigitalOcean.podspec */,
+				3214FEBE02B41CAEC90E7B75 /* README.md */,
+				5AD1592094E50510F83749F3 /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		540DC9E11B14736C008ED96E /* DigitalOcean-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540DCA031B14736C008ED96E /* Build configuration list for PBXNativeTarget "DigitalOcean-OSX" */;
+			buildPhases = (
+				AE020DC9E560B6C700B80281 /* Check Pods Manifest.lock */,
+				540DC9DE1B14736C008ED96E /* Sources */,
+				540DC9DF1B14736C008ED96E /* Frameworks */,
+				540DC9E01B14736C008ED96E /* Resources */,
+				446FE614DC077D7A7BE37E56 /* Copy Pods Resources */,
+				0FE71D9B8F1C9455AF576455 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DigitalOcean-OSX";
+			productName = "DigitalOcean-OSX";
+			productReference = 540DC9E21B14736C008ED96E /* DigitalOcean-OSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6003F589195388D20070C39A /* DigitalOcean */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "DigitalOcean" */;
+			buildPhases = (
+				8780E6A02970AEF30673A04E /* Check Pods Manifest.lock */,
+				6003F586195388D20070C39A /* Sources */,
+				6003F587195388D20070C39A /* Frameworks */,
+				6003F588195388D20070C39A /* Resources */,
+				ABEE60209794466C5915C140 /* Copy Pods Resources */,
+				5B9A7CD433F11CC1B632439A /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigitalOcean;
+			productName = DigitalOcean;
+			productReference = 6003F58A195388D20070C39A /* DigitalOcean.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6003F5AD195388D20070C39A /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				A341442DCDD9BB0FA68FF2D8 /* Check Pods Manifest.lock */,
+				6003F5AA195388D20070C39A /* Sources */,
+				6003F5AB195388D20070C39A /* Frameworks */,
+				6003F5AC195388D20070C39A /* Resources */,
+				771171BDBFFC0CDB3088415C /* Copy Pods Resources */,
+				E4A252C70867C16606310C19 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6003F5B4195388D20070C39A /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = DigitalOceanTests;
+			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6003F582195388D10070C39A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DO;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = shaps.me;
+				TargetAttributes = {
+					540DC9E11B14736C008ED96E = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					6003F5AD195388D20070C39A = {
+						TestTargetID = 6003F589195388D20070C39A;
+					};
+				};
+			};
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "DigitalOcean" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6003F581195388D10070C39A;
+			productRefGroup = 6003F58B195388D20070C39A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6003F589195388D20070C39A /* DigitalOcean */,
+				540DC9E11B14736C008ED96E /* DigitalOcean-OSX */,
+				6003F5AD195388D20070C39A /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		540DC9E01B14736C008ED96E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540DC9EF1B14736C008ED96E /* Images.xcassets in Resources */,
+				540DC9F21B14736C008ED96E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F588195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54A1E0E81B06376700357471 /* Images.xcassets in Resources */,
+				6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */,
+				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AC195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FE71D9B8F1C9455AF576455 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DigitalOcean-OSX/Pods-DigitalOcean-OSX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		446FE614DC077D7A7BE37E56 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DigitalOcean-OSX/Pods-DigitalOcean-OSX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B9A7CD433F11CC1B632439A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DigitalOcean/Pods-DigitalOcean-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		771171BDBFFC0CDB3088415C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8780E6A02970AEF30673A04E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A341442DCDD9BB0FA68FF2D8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ABEE60209794466C5915C140 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DigitalOcean/Pods-DigitalOcean-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE020DC9E560B6C700B80281 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E4A252C70867C16606310C19 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		540DC9DE1B14736C008ED96E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540DC9ED1B14736C008ED96E /* DOOSXViewController.m in Sources */,
+				540DC9EA1B14736C008ED96E /* main.m in Sources */,
+				540DC9E81B14736C008ED96E /* DOOSXAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F586195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F59E195388D20070C39A /* DOiOSAppDelegate.m in Sources */,
+				6003F5A7195388D20070C39A /* DOiOSViewController.m in Sources */,
+				6003F59A195388D20070C39A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AA195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54E8BB061B13BAF9009663D0 /* NSDictionary_DOAdditionsSpec.m in Sources */,
+				54AF6CC01B13D6FB00A9D0E6 /* DOFetchQuerySpec.m in Sources */,
+				54AF6CBE1B13D53100A9D0E6 /* DODeleteQuerySpec.m in Sources */,
+				54F9AF191B13A6EA0054A0C4 /* DOValidatorsSpec.m in Sources */,
+				54E8BB081B13BBDC009663D0 /* DOInternalSpec.m in Sources */,
+				54E8BB0E1B13C753009663D0 /* DOInsertQuerySpec.m in Sources */,
+				54AF6CC21B13DCB800A9D0E6 /* DOActionQuerySpec.m in Sources */,
+				54CCF1261B13B311002D6720 /* NSString_DOAdditionsSpec.m in Sources */,
+				54E8BB0C1B13C01A009663D0 /* DOQuerySpec.m in Sources */,
+				54E8BB041B13B885009663D0 /* NSDate_DOAdditionsSpec.m in Sources */,
+				54C699311B13D00B00A04F17 /* DOUpdateQueriesSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6003F589195388D20070C39A /* DigitalOcean */;
+			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		540DC9F01B14736C008ED96E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540DC9F11B14736C008ED96E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F597195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6003F59F195388D20070C39A /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F5A0195388D20070C39A /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F5B9195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		540DC9FF1B14736C008ED96E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27CF411D2948352EE665035C /* Pods-DigitalOcean-OSX.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DigitalOcean-OSX/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digitalocean.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		540DCA001B14736C008ED96E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EEA0BD4FDF5E443726715F0 /* Pods-DigitalOcean-OSX.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "DigitalOcean-OSX/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digitalocean.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6003F5BD195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6003F5BE195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6003F5C0195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADF961CFC8ECBA061C2CE73E /* Pods-DigitalOcean.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DigitalOcean/DigitalOcean-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				INFOPLIST_FILE = "DigitalOcean/DigitalOcean-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalocean.sdk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6003F5C1195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E1AF44D4B2B1E3B4975684D /* Pods-DigitalOcean.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DigitalOcean/DigitalOcean-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				INFOPLIST_FILE = "DigitalOcean/DigitalOcean-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalocean.sdk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6003F5C3195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9938DB2CEC06F286D3A6E9A2 /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DigitalOcean.app/DigitalOcean";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalocean.sdk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6003F5C4195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4928CD2608BBD576968676B /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DigitalOcean.app/DigitalOcean";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalocean.sdk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		540DCA031B14736C008ED96E /* Build configuration list for PBXNativeTarget "DigitalOcean-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540DC9FF1B14736C008ED96E /* Debug */,
+				540DCA001B14736C008ED96E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "DigitalOcean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5BD195388D20070C39A /* Debug */,
+				6003F5BE195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "DigitalOcean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C0195388D20070C39A /* Debug */,
+				6003F5C1195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C3195388D20070C39A /* Debug */,
+				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6003F582195388D10070C39A /* Project object */;
+}
